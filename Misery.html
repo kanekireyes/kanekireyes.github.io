@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Caratula HTML</title>
+    <style>
+        /* Estilos básicos para el cuerpo */
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilos para el menú */
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+        /* Estilos para el contenedor del menú desplegable */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-image: url('Blades.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        .dropdown .show {
+            display: block;
+        }
+
+        .dropbtn {
+            padding: 0;
+            display: block;
+            cursor: pointer;
+        }
+
+        .dropbtn video {
+            width: 200px;
+            height: auto;
+        }
+
+        /* Estilos para centrar el contenido */
+        .center-table {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center-table table {
+            border-collapse: collapse;
+        }
+    </style>
+    <script>
+        // Función para mostrar/ocultar el contenido del menú desplegable
+        function toggleDropdown(event) {
+            event.preventDefault();
+            var dropdownContent = event.currentTarget.nextElementSibling;
+            dropdownContent.classList.toggle("show");
+        }
+
+        // Cerrar el menú desplegable si se hace clic fuera de él
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.matches('video')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="center-table">
+    <table border="1">
+        <tr>
+            <td colspan="2">
+                <div class="menu">
+                    <div class="dropdown">
+                        <div class="dropbtn" onclick="toggleDropdown(event)">
+                            <video src="Video sin título ‐ Hecho con Clipchamp (3).mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#primer-parcial">Primer parcial</a>
+                            <a href="#file:///C:/Users/Chris/OneDrive/Escritorio/26_Christian/Marquesina.html">Marquesina</a>
+                            <a href="#suma">Suma de dos números</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn" onclick="toggleDropdown(event)">
+                            <video src="Video sin título ‐ Hecho con Clipchamp (3).mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#segundo-parcial">Segundo parcial</a>
+                            <a href="#promedio">Promedio de un alumno</a>
+                            <a href="#raiz">Raíz cuadrada</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn" onclick="toggleDropdown(event)">
+                            <video src="Video sin título ‐ Hecho con Clipchamp (3).mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#cecytem">CECYTEM</a>
+                            <a href="#quees">¿Qué es?</a>
+                            <a href="#mision">Misión</a>
+                            <a href="#vision">Visión</a>
+                            <a href="#objetivos">Objetivos</a>
+                            <a href="#historia">Historia</a>
+                            <a href="#organigrama">Organigrama</a>
+                            <a href="#croquis">Croquis</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn" onclick="toggleDropdown(event)">
+                            <video src="Video sin título ‐ Hecho con Clipchamp (3).mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#adicciones">Adicciones</a>
+                            <a href="#infografias">Infografías</a>
+                            <a href="#video">Video de hábitos saludables</a>
+                            <a href="#tiktok">Tik Tok</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropbtn" onclick="toggleDropdown(event)">
+                            <video src="Video sin título ‐ Hecho con Clipchamp (3).mp4" autoplay muted loop></video>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#planea-construye-t">Planea y Construye T</a>
+                            <a href="#habilidad-lectora">Habilidad Lectora</a>
+                            <a href="#habilidad-matematica">Habilidad Matemática</a>
+                            <a href="#lecciones-7-12">Lecciones Construye T: 7,8,9,10,11,12</a>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
