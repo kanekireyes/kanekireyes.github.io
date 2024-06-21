@@ -1,0 +1,99 @@
+<html>
+     <head><title>Suma.html</title> </head>
+
+<center><font size="06"><font face="french script mt"><font color="black">
+    </font color></font face></font size></center></h1>
+                <div style="text-align: center"><img src="Encabezado.png" width="850" height="100"> <br>
+
+
+                Colegio de Estudios Cientificos Y Tecnologicos del Estado de Mexico Plantel Ixtlahuaca <br>
+                Christian Pablo Tomas<br>Grupo: 402    -     N.L:26-Turno: Matutino
+                <p><size="3" face="French Script MT"><center>
+
+<p><font color="black" size="4" face="Tahoma"><center>Suma de 2 numeros en HTML</center></font></p>
+
+<script>
+function sumar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1+n2;
+}
+</script>
+
+<script>
+function restar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1-n2;
+}
+</script>
+
+<script>
+function multiplicar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1*n2;
+}
+</script>
+
+<script>
+function dividir(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1/n2;
+}
+</script>
+
+<body>
+<center><table widht="1000" border="1">
+<form name="MyForm">
+<tr>
+<td widht="300"><label>Dame el 1er Número:</label></td>
+<td widht="300"><input type="text" name="txtNumero1"></td>
+<td widht="200" rowspan="4"><img src="Blades.jpeg" width="100" height="100"></td>
+</tr>
+
+<tr>
+<td widht="300"bgcolor="#99FFCC"><label>Dame el 2do Número:</label></td>
+<td widht="300"><input type="text" name="txtNumero2"></td>
+</tr>
+
+
+<tr>
+<td><label>Mostrar Resultado</label></td>
+<td widht="300"><input type="text" name="txtResultado"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="button" value="SUMA" onclick="sumar()"</td>
+<input type="button" value="RESTA" onclick="restar()"</td>
+<input type="button" value="MULTIPLICACION" onclick="multiplicar()"</td>
+<input type="button" value="DIVISION" onclick="dividir()"</td>
+</tr>
+</form>
+</table>
+                <div style="text-align: center"><img src="greca.jpg" width="850" height="30"></td>
+           
+
+                 <footer>
+        <p><font size="french script mt"><center>Todos los derechos reservados, trabajo realizado por Christian Pablo Tomas.
+        <br> Queda prohibido el uso de este documento con fines no autorizados por el autor.</center></font size></p>
+    </footer>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
